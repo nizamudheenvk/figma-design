@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slanted-image {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 60px;
+        }
+
+        .slanted-image img {
+            width: 340px;
+            height: 300px;
+            object-fit: cover;
+            /* border-radius: 15px; */
+            transform: perspective(800px) rotateX(2deg) rotateY(20deg);
+            transition: transform 0.3s ease;
+        }
+
+        .slanted-image img:nth-child(2) {
+            transform: perspective(800px) rotateX(2deg) rotateY(5deg);
+            height: 260px;
+        }
+
+        .slanted-image img:nth-child(3) {
+            transform: perspective(800px) rotateX(2deg) rotateY(-5deg);
+            height: 260px;
+        }
+
+        .slanted-image img:nth-child(4) {
+            transform: perspective(800px) rotateX(2deg) rotateY(-20deg);
+        }
+
+        .slanted-image img:hover {
+            transform: perspective(800px) rotateX(0) rotateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .slanted-image img {
+                width: 200px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 100vh; width: 100%; background-color: #F9F9F9;">
+        <!-- Navbar -->
+        <nav class="container navbar mt-3" style="box-shadow: 0px 0px 5px 5px grey; height: 10vh; background-color:#F9F9F9; display: flex; justify-content: space-evenly;">
+            <h1 style=" color: black; font-weight: 700; font-size: 48px;">ECLECTIQ</h1>
+            <div >
+                <ul style=" display: flex; justify-content: space-evenly;">
+                    <li class="list2">New & featured </li>
+                    <li class="list2">Men  </li> 
+                    <li class="list2">Women</li>
+                    <li class="list2">Kids</li>
+                    <li class="list2">Accessories</li>
+                    <li class="list2">Sales</li>
+                </ul>
+            </div>
+            <div>
+                <ul style="display: flex;">
+                    <li class="lsit1 text-dark"><i class="fa-solid fa-search"></i></li>
+                    <li class="lsit1 text-dark"><i class="fa-solid fa-user"></i></li>
+                    <li class="lsit1 text-dark"><i class="fa-solid fa-heart"></i></li>
+                    <li class="lsit1 text-dark"><i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Hero Section -->
+        <div style="margin-top: 60px;">
+            <p class="text-center">Experience fashion like never before</p>
+            <h1 style="font-family: 'Times New Roman', Times, serif;" class="text-center">
+                Elevate Your Style With Eclectiq: Where <br>Fashion Meets Passion
+            </h1>
+            <p class="text-center">
+                Discover a world of fashion-forward trends, curated collections, and timeless pieces <br> 
+                that inspire. Unleash your inner fashionista and embark on a journey of confidence, <br> 
+                elegance and impeccable style.
+            </p>
+            <p class="text-center">
+                <button class="btn btn-dark">Start Shopping</button>
+            </p>
+        </div>
+        
+        <!-- Curved Image Section -->
+        <div class=" d-flex justify-content-center align-items-center slanted-image">
+            <img width="30px" src="img.jpeg" alt="Fashion 1">
+            <img src="img1.jpeg" alt="Fashion 2">
+            <img src="img2.jpeg" alt="Fashion 3">
+            <img src="img3.jpeg" alt="Fashion 4">
+        </div>
+       <div >
+        <h1 style="font-weight: 700; font-family: 'Times New Roman', Times, serif; margin-top: 120px;" class="text-center ">Explore Our Latest Collections For You</h1>
+       <div class="d-flex justify-content-center align-items-center" style="margin-top: 150px;">
+
+        <div class="card m-5" style="width: 461px;height: 770px;">
+            
+            <img src="img4.jpeg" style="width: 461px;height: 550px; "  class="card-img-top" alt="...">
+       
+            <div class="lg card-body bg-dark text-light">
+              <h1 style="font-family: 'Times New Roman', Times, serif;" class="card-title">Collection For Couples</h1>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark border rounded">shop now  <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="card m-5 " style="width: 461px;height: 770px;">
+            <img src="img5.jpeg" style="width: 461px;height: 550px;" class="card-img-top" alt="...">
+            <div class="card-body bg-dark text-light">
+              <h1  style="font-family: 'Times New Roman', Times, serif;" class="card-title">Sheer Bomber Jacket</h1>
+              <p class="card-text">Introducing our stylish and versatile sheer clergy caped bomber jacket</p>
+              <a href="#" class="btn btn-dark border rounded"> shop now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+       </div>
+<h1 style="margin-top: 100px; font-family: 'Times New Roman', Times, serif;" class="text-center fw-bolder">Latest Arrivals By Categories</h1>
+<div class="d-flex justify-content-center">
+    <ul class="d-flex ">
+        <li class="list2">Shirts</li> 
+        <li class="list2">Shorts</li>
+        <li class="list2">Jackets</li>
+        <li class="list2">Hoodies</li> 
+        <li class="list2">Trousers</li>
+        <li class="list2">Shoes</li>
+        <li class="list2">Accessories</li>
+    </ul>
+</div>
+<div class="d-flex justify-content-center">
+<!-- first card -->
+    <div class="card m-3  lg" style="width: 18rem;">      
+        <img src="img6.jpeg" style="width: 330px;height: 323px;"  class="card-img-top  img-fluid" alt="...">
+        <div style="background-color: #EDE0CC;" class="lg card-body text-black">          <h5 style="font-family: 'Times New Roman', Times, serif;" class="card-title">Oversized Denim Hoodie</h5>
+            <div class="d-flex justify-content-between">
+                <p class="card-text">Men’s T-shirt </p><i  class="fa-solid fa-bag-shopping"></i></fa-solid>
+              </div>
+        </div>
+      </div>
+<!-- second card -->
+      <div class="card m-3  lg" style="width: 18rem;">      
+        <img src="img7.jpeg" style="width: 330px;height: 323px;"  class="card-img-top  img-fluid" alt="...">
+        <div style="background-color: #EDE0CC;" class="lg card-body text-black">          <h5 style="font-family: 'Times New Roman', Times, serif;" class="card-title">Doberman oversized</h5>
+            <div class="d-flex justify-content-between">
+                <p class="card-text">Men’s T-shirt </p><i  class="fa-solid fa-bag-shopping"></i></fa-solid>
+              </div>
+        </div>
+      </div>
+
+ <!-- third card -->
+ <div class="card m-3  lg" style="width: 18rem;">      
+    <img  src="img8.jpeg" style="width: 330px;height: 323px;"  class="card-img-top img-fluid" alt="...">
+    <div style="background-color: #EDE0CC;" class="lg card-body text-black">      <h5 style="font-family: 'Times New Roman', Times, serif;" class="card-title">Cargo Pants</h5>
+        <div class="d-flex justify-content-between">
+            <p class="card-text">Men’s T-shirt </p><i  class="fa-solid fa-bag-shopping"></i></fa-solid>
+          </div>
+     
+    </div>
+  </div>
+  <!-- fourth card -->
+    <div class="card m-3  lg" style="width: 18rem;;">      
+        <img src="img9.jpeg" style="width: 330px;height: 323px;"  class="card-img-top img-fluid" alt="...">
+        <div style="background-color: #EDE0CC;" class="lg card-body text-black">
+          <h5 style="font-family: 'Times New Roman', Times, serif;" class="card-title">Distressed Baggy Jeans</h5>
+          <div class="d-flex justify-content-between">
+          <p class="card-text">Men’s T-shirt </p><i  class="fa-solid fa-bag-shopping"></i></fa-solid>
+        </div>
+        </div>
+    </div>
+</div>
+<h1 class="mt-5 img-fluid" style="margin-left: 90px;font-weight: 700;">Featured</h1>
+<div class="row mt-5 ">
+    <div class="col-6 ">
+        <div   class="img-fluid" style="border-radius: 20px; margin-left: 90px; width: 585px; height: 339px;background: url(https://s3-alpha-sig.figma.com/img/b041/8a83/6004c86184c1ef0c0f1fd8107262c734?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E8RalZaIOWbgnRX~Tv~WLUPZ3yF71etBG9BpaRxIpiGt3cZy94D1EQnysWh8x3Zj6yPxjYeFXB~0GZx~vE6jJqw0wOVi-2C4jwVVN18-YVODsWOlII8XdrUkU34L21uBKTApXZe1dccm8D-hVZjxV0dQrJjyazKTHO4BFmB-HLGF2O4R71v2pPx62QYQh8kODbDVGdEaw2WUhdr2fmxDi~R02ZPwG-N5QMGxFsVPTq1nGnSk6acsaztNe9tnEF7EPw99ueXjZ7AubRD2UFxitBLChyoL6rORQC73~7CS1nu5LyI7hAj3E-lTnjqExczySmAtsQxmqoDXAS8bMkIgkw__);background-size: cover;">
+            <h1 class="text-light text-center " style=" padding-top: 230px;">Denims Women Exclusive <br> Series
+                <a href="#" class="btn text-light  border rounded"> shop now <i class="fa-solid fa-arrow-right"></i></a>
+            </h1>
+         
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="" style="border-radius: 20px; margin-left: 50px; width: 585px; height: 339px;background: url(https://s3-alpha-sig.figma.com/img/b28c/cc8d/f545b5f4e44b1673902ba0756fc4d2de?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iBYmZjvlzyqmChpbO1nRx-U8X5NRwN9ZDyOj-1nAjCp9E-fkbKjs~7iRFR~FHHyHLEdJvVUfMCCZj8pqPo-GiyN98X1UfWDUQqZxFtnqqMeVYeEiFlEKQPPZoUgPqip2Rzc5hX-3bMlHq3nZAdqNXghBHvoaeuKqaeqmaFPpsV7wFYOoNUP0ImdxTsYhDISWh2YHX62KTSjaRCk0EmGpnbc9R-P3~30ghpNkwI4O-GH0Ix7esOZ6Rxpl5H0Xa~7Lk6uWmYcaGTPI7NVf4KhaUNgMDS7OyaJKoC5icLnpwjVM3P9UnYOPFlfGN7BGM63wPwIJjv-WXPh6lvCNv3JrYw__);background-size: cover;">
+            <h1 class="text-light text-center " style=" padding-top: 230px;">Wide High Jeans : Any Day Ceollections
+                <a href="#" class="btn text-light  border rounded"> shop now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+</div>
+
+
+
+    </div>
+
+
+<div class="row  text-light  container  " style="margin-top: 100px; width: 1197px; margin-left: 120px; height: 40vh; border: 4px solid black;border-radius: 20px; background-color: #E9BAA8;">
+   
+    <div  class="col-9">
+        <h1 class="mt-5">Save 50% this Winter season</h1>
+        <p style="font-size: 20px;font-weight: 700; margin-top: 40px;" >It’s  time to revamp your fashion game without breaking the bank! Dive into our exclusive 50% off sale and discover unbearable deals on the most coveted styles.</p>
+        <a href="#" class="btn text-light  border rounded"> shop now <i class="fa-solid fa-arrow-right"></i></a>
+
+    </div>
+    <div class="col-3">
+     <img style="width: 291.5px;height: 315px; border-radius: 20px;" src="img10 Background Removed.png" alt="">
+    </div>
+  
+</div>
+
+<!-- footer -->
+
+<div style="height: 30vh; background-color: black ;color: white;"class="mt-5 d-flex jusify-contetnt-around">
+    <div style="margin-left: 150px;margin: 80px;" >
+        <h1>ECLECTIQ</h1>
+       <p>Design amazing digital experiences that <br> create more happy in the world.</p>
+    </div>
+    <div  style="margin-left: 300px;margin-top: 70px;" class=" text-light d-flex jusify-contetnt-evenly" >
+        <ul class="lists">
+            <h4>Shop</h4>
+           <a class="link" href=""><li>Men’s Product</li></a> 
+           <a class="link" href=""> <li>Women’s Product</li></a>
+           <a class="link" href=""><li>Winter Edition</li></a>
+            <a class="link" href=""><li>Accessories</li></a>
+           <a class="link" href=""> <li>Discounts</li></a>
+        </ul>
+        <ul  class="lists">
+            <h4>Company</h4>
+            <a class="link" href=""><li>About US</li></a>
+           <a class="link" href=""> <li>Careers</li></a>
+            <a class="link" href=""><li>Investors</li></a>
+            <a class="link" href=""> <li>News</li></a>
+            <a class="link" href=""><li>purpose</li></a>
+        </ul>
+        <ul  class="lists">
+            <h4>Order Status</h4>
+           <a class="link" href=""><li>Shipping & Delivery</li></a> 
+            <a class="link" href=""><li>Returns</li></a>
+            <a class="link" href=""><li>Payment Option</li></a>
+           <a class="link" href=""> <li>Contact</li></a>
+        </ul>
+    
+   
+</div>
+
+</div>
+<div style="height:vh; background-color: black;">
+<p style="font-size: 30px;color: white; "class="container">  __________________________________________________________________________________
+</p>
+<div class="d-flex justify-content-around">
+<p style="margin-left: 70px;"><i class="fa-solid fa-copyright"></i></p>
+<p>2025 Eclectiq store  All rights reserved.</p>
+<div class="text-light">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i> 
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+</div>
+</div>
+
+</div>
+
+    </div>
+    
+
+
+
+
+
+</body>
+</html>
