@@ -69,6 +69,40 @@
 #cards{
     border-radius: 20px;
 }
+#footerehead{
+    font-family: "Playfair Display";
+
+}
 
 
 /* Parent container to align images */
+
+/* For screens with a width between 1024px and 1366px */
+/* Base styles for all devices */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles for small laptops (1024px and above) */
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* Styles for medium laptops (1280px and above) */
+  @media (min-width: 1280px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  /* Styles for large laptops (1440px and above) */
+  @media (min-width: 1440px) {
+    body {
+      font-size: 22px;
+    }
+  }
+  

@@ -28,6 +28,7 @@
             width: 340px;
             height: 300px;
             object-fit: cover;
+            /* border-radius: 15px; */
             transform: perspective(800px) rotateX(2deg) rotateY(20deg);
             transition: transform 0.3s ease;
         }
@@ -50,55 +51,10 @@
             transform: perspective(800px) rotateX(0) rotateY(0);
         }
 
-        /* Media query for laptops */
-        @media (max-width: 1440px) and (min-width: 1024px) {
-            .navbar {
-                width: 100%;
-                margin-left: 0;
-                justify-content: space-between;
-            }
-
-            .slanted-image img {
-                width: 250px;
-                height: 250px;
-            }
-
-            .text-center {
-                text-align: center;
-            }
-
-            .card {
-                width: 100%;
-                margin: 10px 0;
-            }
-
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .col-6 {
-                width: 45%;
-                margin: 10px 0;
-            }
-
-            .col-9 {
-                width: 75%;
-                margin: 10px 0;
-            }
-
-            .container {
-                width: 100%;
-                margin-left: 0;
-            }
-        }
-
-        /* Additional styling for small devices */
         @media (max-width: 768px) {
             .slanted-image img {
                 width: 200px;
-                height: 200px;
+                height: 300px;
             }
         }
     </style>
