@@ -4,7 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     /* background-color: #f9f9f9; */
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 .list2{
     margin: 10px;
@@ -25,6 +25,8 @@
 .list2{
     margin: 10px;
     list-style: none;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
 }
 .list2:hover{
     background-color: black;
@@ -46,8 +48,45 @@
 }
 .navbar{
     /* box-shadow: 0px 3px 5px 5px #ffffff; */
-    filter: drop-shadow(20px 10px  4px  #00000040);
+    filter: drop-shadow(3px 5px  4px  #00000040);
 }
+.heading{
+    filter: drop-shadow(5px 10px  4px  #00000040);
+}
+.per{
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    text-align: justify;
+    align-items: center;
+}
+.shopnow{
+    margin-left: 30px;
+}
+.titles{
+    font-family: "Playfair Display", serif;
+}
+
+#cards{
+    border-radius: 20px;
+}
+/* Default styles (assumed desktop) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Restrict responsiveness only to desktop widths */
+@media screen and (max-width: 1024px) {
+    body {
+        display: none; /* Hide content for screens smaller than 1024px */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Styles specific to desktop devices can be reinforced here */
+}
+ 
 
 
 /* Parent container to align images */
