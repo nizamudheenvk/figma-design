@@ -69,24 +69,6 @@
 #cards{
     border-radius: 20px;
 }
-/* Default styles (assumed desktop) */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Restrict responsiveness only to desktop widths */
-@media screen and (max-width: 1024px) {
-    body {
-        display: none; /* Hide content for screens smaller than 1024px */
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    /* Styles specific to desktop devices can be reinforced here */
-}
- 
 
 
 /* Parent container to align images */
